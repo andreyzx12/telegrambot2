@@ -18,7 +18,8 @@ def repeat_all_messages(message):
 
         total_ram = round(ram[0] / 1024 / 1024 / 1024, 1)
         used_ram = round(ram[1] / 1024 / 1024 / 1024, 1)
-        fin_text = '{} GPU: {}\n\nProcess load: {}%\n\n {} / {}Gb ({}%)'.format(stat_err, gpu[0], cpu, total_ram, used_ram, ram[2])
+        fin_text = '{} GPU: {}\n\nProcess load: {}%\n\n {} / {}Gb ({}%)'.format(stat_err, gpu[0], cpu,
+                                                                                total_ram, used_ram, ram[2])
         bot.send_message(message.chat.id, fin_text)
 
 
