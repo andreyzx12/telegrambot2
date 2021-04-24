@@ -1,8 +1,8 @@
 import telebot
+from telebot import TeleBot
 import pcinfoforhack
 
-
-bot = telebot.TeleBot('TOKEN')
+bot: TeleBot = telebot.TeleBot('TOKEN')
 gpu = pcinfoforhack.gpu_name()
 cpu = pcinfoforhack.proc_load()
 
